@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>Posizionamento4</title>
+    <style>
+    .box1{width:400px;
+          height: 300px;
+          padding: 10px;
+          border: 1px solid #002c53;
+          background: hsl(208, 46%, 55%);
+          position:static; 
+          top:-30px;}  
+
+    .box2{width:400px;
+          height: 600px;
+          padding: 10px;
+          border: 1px solid #002c53;
+          background: #568ec0;
+          position:absolute;
+          left: 50px;}  
+          
+    .box3{width:200px;
+          height: 200px;
+          padding: 10px;
+          border: 1px solid black;
+          background: red;
+          position:absolute;
+          right: 50px;}            
+    
+    .box4{width:300px;
+          height: 300px;
+          border: 1px solid black;
+          background:orangered;
+          position:fixed; /*con fixed il posizionamento è fisso e anche con lo scrolling della pagina lui resta fermo*/
+          top:50px;
+          right:300px;} 
+     /*-----------------------------------------------------------------------------------------------------------------------------------------------*/     
+    .box5{width:400px;
+          height: 300px;
+          padding: 10px;
+          border: 1px solid #002c53;
+          background:purple;
+          position:relative;
+          left: 50px;}
+
+    .boxIn6{width:200px;
+          height: 150px;
+          padding: 10px;
+          border: 1px solid #002c53;
+          background:greenyellow;
+          position: absolute;
+          right:30px;
+          z-index: 2;}
+                
+    .boxIn7{width:200px;
+          height: 150px;
+          padding: 10px;
+          border: 1px solid #002c53;
+          background: blue;
+          position: absolute;
+          left: 30px;
+          z-index: 1;} /*z index stabilisce chi deve andare in primo piano*/
+    
+    
+    </style>
+
+</head>
+<body>
+
+    <h2>Position: Relative</h2>
+<div class="box1">
+    <div class="box3">
+        <p>questo box con posizionamento relative è spostato di -30px in alto, rispetto alla sua posizione originaria </p>
+    </div>
+</div>
+
+
+    <h2>Position: Absolute</h2>
+<div class="box2">
+    <p>questo box con posizionamento absolute è traslato(spinto) di 50px sul lato sinistro rispetto alla sua posizione originaria</p>
+</div>
+
+<div class="box4">
+    <p>dfdfsdfsdfdf</p>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="box5">
+    <div class="boxIn6">
+        <p>sdfsdf</p>
+    </div>
+    <div class="boxIn7">
+        <p>sdfsd</p>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

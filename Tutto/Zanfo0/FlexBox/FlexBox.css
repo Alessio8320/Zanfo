@@ -1,0 +1,8 @@
+#menu{height:40px;
+    background: coral;
+    display: flex; 
+    flex-direction: row;/*mette in riga gli elementi*/
+    justify-content: center;/*permette di posizionare gli item su linea orizzontale*/
+    align-items: center;} /*permette di posizionare gli item su linea verticale*/
+
+#menu li{margin:10px;}

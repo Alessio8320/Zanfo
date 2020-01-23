@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+	
+		<meta charset="utf-8" />
+
+		<title>Uso dei selettori</title>
+		
+		<style type="text/css">
+		
+        p {color:red}   /*1 TUTTI I PARAGRAFI <P> VISUALIZZATI IN ROSSO*/                                                                  
+        #blu {color:blue} /*2 SOLO IL PRIMO PARAGRAFO IN BLU*/
+        div > p {color:green} /*3 TUTTI I PARAGRAFI DI DIV CON FONT VERDE*/
+        #A p {background: yellow}/*4 I PARAGRAFI DELLA SECTION CON ID "#A" SU SFONDO GIALLO*/ 
+        div p {background: #00FFFF;}/*5 TUTTI I PARAGRAFI P IN DIV SU SFONDO AZZURRO*/
+        div section p {font-size: xx-large;}/*TUTTI I PARAGRAFI IN DIV ALL'INTERNO DELLE SEZIONI CON FONT ALTERNATIVO*/
+        #evidenzia {background: #AAAAAA;} /*L'ID "EVIDENZIA" RIFERITO A TUTTO IL DIV CON SFONDO */
+        .speciale {background: yellow;}/*TUTTE LE SEZIONI DELLA CLASSE "SPECIALE" SU SFONDO GIALLO*/
+        .speciale > p {color:red;}/*TUTTI I PARAGRAFI DELLA CLASSE SPECIALE CON FONT ROSSO*/
+        p:first-child{color:greenyellow}/*TUTTI I PRIMI PARAGRAFI DI OGNI DIVISIONE E SEZIONE IN VERDE*/
+        section:nth-last-child(){background: yellow;}/*L'ULTIMO PARAGRAFO DELL'ULTIMA SEZIONE SU SFONDO GIALLO*/
+		</style>
+		
+	</head>
+	
+	<body>
+		<p id="blu">
+			Il tesoro dell&rsquo;Esquilino Ã¨ un servizio di oggetti d&rsquo;argento
+			di epoca romana.
+		</p>
+		
+		<div>
+		
+			<p>
+				Il tesoro deve la sua fama al fatto che molti pezzi presentano 
+				un&rsquo;iconografia decisamente pagana.
+			</p>
+			
+			<p>
+				Il deposito del tesoro in un nascondiglio Ã¨ probabilmente da 
+				ricondurre a qualche evento catastrofico.			
+			</p>
+					
+		</div>
+		
+		<div id="evidenzia">
+			<p>
+				Il tesoro fu scoperto nel 1793, a Roma, alle pendici
+				dell&rsquo;Esquilino.				
+			</p>
+			
+			<p>
+				Gli operai tentarono di rivendere di nascosto l&rsquo;argento.
+			</p>	
+		</div>
+		
+		<div>
+		
+			<section class="speciale">
+				<p>
+					La composizione del tesoro Ã¨ stata nota a lungo con 
+					poca precisione.				
+				</p>
+			</section>
+			
+			<section>
+				
+				<p>
+					Nella sua relazione del 1793, Ennio Quirino Visconti 
+					citÃ² 25 pezzi.
+				</p>
+				
+			</section>		
+		</div>
+		
+		<section id="A" class="speciale">
+			<p>
+				Nel 1985, Kathleen Shelton ha pubblicato un libro sul tesoro in cui
+				identifica 27 oggetti sicuramente riconducibili al tesoro.
+			</p>
+		</section>
+		
+	</body>
+</html>
+	

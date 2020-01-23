@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* 
+             Alunno:
+             Classe:
+                 
+    Anno scolastico:
+               Data:
+                   
+*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Marmelad);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
+
+body {
+    background-color: #F6F6EE;
+    background-image: url(../img/bg.jpg);
+    font-family : Questrial, "Trebuchet MS", Helvetica, Arial, sans-serif; 
+    font-size: 14px;
+    line-height: 1.25;
+    padding: 0;
+    margin: 0;
+}	
+
+body > div#wrapper * {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #961B25;
+}
+
+a:hover {
+    color: #6F92A7;
+}
+
+div#wrapper {
+    background-image: url(../img/bg-header.jpg);
+    border-bottom: solid #FFFFFB 1px;
+    height: 70px;
+    width: 100%;
+    display: block;
+}
+
+div#wrapper > header {
+    width: 960px;
+    margin: 0 auto 0 auto;
+    padding-top: 15px;
+}
+
+div#wrapper > header > p {
+    float: left;
+}
+
+div#wrapper > header > p > a {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    color: rgba(0, 0, 0, 0.0);
+    width: 250px;
+    height: 45px;
+    display: block;
+}
+
+div#wrapper > header > p > a:hover {
+    background-position: 0px -45px;
+}
+
+div#wrapper > header nav {
+    float: right;
+    margin-top: 13px;
+}
+
+div#wrapper > header nav ul li {
+    display: inline;
+    margin: 0px 5px 0px 5px;
+}
+
+div#wrapper > header nav ul li a {
+    color: #F6F6EE;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: lowercase;
+    padding: 5px 8px 5px 8px;
+}
+
+div#wrapper > header nav ul li.home a {
+    background-color: #4F1D1E;
+    border-radius: 10px;
+}
+
+div#wrapper > header nav ul li a:hover {
+    text-shadow: 1px 1px 1px #2C0306;
+    background-color: #4F1D1E;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px #2C0306;
+    color: #F6F6EE;
+}
+
+div#wrapper > header nav ul li.rss, header nav ul li.twitter  {
+    position: relative;
+    left: -245px;
+    margin: 0;
+}
+
+div#wrapper > header nav ul li.rss a {
+    color: #B4676C;
+    border-right: solid #903F43 1px;
+    margin: 0;
+    padding-left: 20px;
+    background-image: url(../img/rss.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    font-size:12px;
+}
+
+div#wrapper > header nav ul li.twitter a {
+    color: #B4676C;
+    margin-left: 3px;
+    padding-left: 20px;
+    background-image: url(../img/twitter.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    font-size:12px;
+}
+
+div#wrapper > header nav ul li.rss a:hover, div#wrapper > header nav ul li.twitter a:hover  {
+    color: #F6F6EE; 		
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+main {	
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px 10px 5px 10px;
+}
+
+main h1 {
+    font-family: Marmelad, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    border-bottom: solid #888888 1px;
+}
+
+main h2 {
+    font-family: Marmelad, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+main h3 {
+    font-family: Marmelad, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #555555;
+}
+
+main li {
+    margin-bottom: 5px;
+}
+
+figure {
+    clear: right;
+    float: right;
+    padding: 5px;
+    margin: 0 0 10px 20px;
+    border: solid #AAAAAA 1px;
+}
+
+figure.sinistra {
+    clear: left;
+    float: left;
+    padding: 5px;
+    margin: 0 20px 10px 0;
+    border: solid #AAAAAA 1px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
+
+table {
+    width: 90%;
+    border: 1px solid #EFE2BC;
+    text-align: left; 
+    border-collapse: collapse;
+    margin: 5px auto 15px auto;
+}
+
+td,th {
+    padding: 6px 5px; 
+    border: 0;
+}
+
+th {
+    font-weight: bold;
+    background-color: #90353C;
+    color: white;
+    border-bottom: solid #CCEEFF 1px;
+}
+
+table tr:nth-of-type(even){
+    background-color: #EFE7C7;
+}
+
+table tr:nth-of-type(even) td {
+    border-bottom: solid #EFE2BC 1px; 
+}
+
+
+footer {
+    clear: both;
+    display:block;
+    margin: 30px 15px 30px 15px;
+    border-top: solid #C9C9C0 1px;
+    padding-top: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: #B6B6AB;
+    line-height: 1.0;
+    padding: 5px;
+    margin: 0;
+}

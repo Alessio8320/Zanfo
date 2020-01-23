@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <meta charset="utf-8">
+        <style>
+            .red{color:red;
+            font-size: 180px;
+            background-color: black;
+            text-align: center;}
+
+            .green{color:green;
+            font-size:180px;
+            background-color: black;
+            text-align: center;}
+
+
+
+        </style>
+    </head>
+    <body>
+
+
+<script>
+
+
+    var valore1= parseInt( prompt("inserisci un valore"));                       //parseInt va a specificare che il dato inserito sarà un numero
+    var operatore= prompt("inserisici l'operatore");
+    var valore2= parseInt( prompt("inserisci il secondo valore"));
+    var risultato= 0;
+
+    if (operatore == "+") {
+        risultato=valore1 + valore2;
+    }
+    if (operatore == "-") {
+        risultato= valore1 - valore2;
+    }
+    if (operatore == "*") {
+        risultato= valore1 * valore2;
+    }
+    if (operatore == "/") {
+        risultato= valore1 / valore2;
+    }
+    if (risultato>0) {
+    document.write('<p class="green">' + risultato + '</p>')
+    }
+    else {
+        document.write('<p class="red">' + risultato + '</p>')
+    }
+
+                        //crea una finestra di dialogo dove specifica il risultato
+    alert (risultato);   // riporta il risultato direattemente in pagina
+
+
+
+</script>
+
+</body>
+</html>

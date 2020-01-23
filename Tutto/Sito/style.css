@@ -1,0 +1,34 @@
+header{
+    background-image: url(mysiteimg/header.png);
+    background-attachment: fixed;
+    height: 650px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-origin: content-box;}
+
+.logo img{ 
+    width: 200px;
+}
+
+body{
+    background-image: url(mysiteimg/sfondo.jpg!d);
+}
+.title{
+    position: absolute;
+    top: 300px;
+    color:black;
+    
+    
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;}
+
+.jumbo{
+    margin-top: 50px;
+}

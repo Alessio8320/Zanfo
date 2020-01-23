@@ -1,0 +1,25 @@
+body{font-family: monospace;
+     background-color: lightsalmon;
+
+    }
+.container{margin: 15%;}
+h2{font: bold;
+color: gold;} 
+
+#titolo{font-size: larger;
+color: linen;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center;
+text-shadow: black;}
+
+li{font-size: medium;}
+
+.aa{width: 30%;
+border: black;
+border-style: dotted;
+float: left;}
+
+.foto{width: 30%;
+float: left}
+
+

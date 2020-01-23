@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+
+       function tipo(ins){
+           console.log(typeof ins)
+       }
+       tipo('ciao');
+
+       function summ(primo, secondo){
+           ris=primo+secondo;
+           console.log(ris)
+       }
+       summ(30,20);
+
+       function calcolo(value1, value2, oper){
+    
+        switch(oper){
+           
+            case "+":
+            ris=value1+value2;
+            console.log(ris)
+            break;
+
+            case "-":
+            ris=value1-value2;
+            console.log(ris)
+            break;
+
+            case "*":
+            ris=value1*value2;
+            console.log(ris)
+            break;
+
+            case "/":
+            ris=value1/value2;
+            console.log(ris)
+            break;
+        }
+   
+       }
+       calcolo(10,50,'+');
+
+       
+
+       function palindroma(frase){
+               var text=frase.split('').reverse().join(''); //split la divide per ogni carattere, reverse la ruota, join la riunisce al contrarioS
+               if(text==frase){
+                   console.log("la frase è palindroma");
+               }
+               else {
+                   console.log("non è palindroma");
+               }
+
+       }
+           palindroma("i topi non avevano nipoti")
+       
+
+
+    </script>   
+
+</body>
+</html>

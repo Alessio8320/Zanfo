@@ -1,0 +1,21 @@
+[{
+    "message":"Lorem ipsum dolor sit amet",
+    "img":"img/profile.png",
+    "recived":true
+},{
+    "message":"Lorem ipsum dolor sit amet",
+    "img":"img/profile.png",
+    "recived":true
+},{
+    "message":"Lorem ipsum dolor sit amet",
+    "img":"img/profile.png",
+    "recived":true
+},{
+    "message":"Lorem ipsum dolor sit amet",
+    "img":"img/profile.png",
+    "recived":false
+},{
+    "message":"Lorem ipsum dolor sit amet",
+    "img":"img/profile.png",
+    "recived":true
+}]

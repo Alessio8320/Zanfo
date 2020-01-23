@@ -1,0 +1,171 @@
+aside {
+    background-color: rgb(252, 54, 5);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 80px;
+}
+
+aside li {
+    margin-top: 10px;
+}
+
+.big{
+    margin-left: 10px;
+    margin-top:70px;}
+
+.big h1,h2{margin-left: 5px;}
+
+.title {
+    font-size: medium;
+    margin-top:80px;
+    margin-left: 10px;
+}
+
+.gallery1 img {
+    margin: 5px;
+    width: 590px;
+    margin-left: 10px;
+}
+
+.gallery2 img {
+    margin-left: 5px;
+    margin: 5px;
+    width: 590px;
+}
+
+.thead1 {
+    background-color: dimgrey;
+    color: ghostwhite;
+}
+
+.thead1 th{padding:30px;}
+
+.thead2 th{padding:30px;}
+
+.thead2 {
+    background-color: rgb(252, 54, 5);
+    color: ghostwhite;
+}
+
+.table {
+    text-align: center;
+    background-color: honeydew;
+    
+}
+
+h1 {
+    color: rgb(252, 54, 5);
+}
+
+.tit {
+    color: rgb(252, 54, 5);
+}
+
+input {
+    width: 1090px;
+    margin-left: 10px;
+}
+
+.inp {
+    margin-left: 10px;
+}
+
+.btn {
+    color: whitesmoke;
+    margin-left: 10px;
+    width: 1090px;
+    margin-top: 15px;
+    background-color: rgb(252, 54, 5);
+    margin-bottom: 100px;
+}
+
+.card {
+    margin: 10px;
+    background-color: honeydew;
+}
+
+.card img{filter: grayscale(60%);}
+
+footer {
+    background-color: blanchedalmond;
+    text-align: right;
+    height: 100px;
+    width: 100%;
+}
+
+.lastp{
+    margin-top:40px
+}
+
+.redbtn{
+    background-color: rgb(252, 54, 5);
+    padding:8px;
+    color:whitesmoke;
+    border-style: none;
+}
+
+#pr{
+    padding: 0px;}
+
+.col-12{
+    margin-top: 80px;
+    margin-left: 5px;}
+
+img{
+    opacity: 85%;
+}
+
+.contact p,h3,h1{
+    margin-left: 5px;
+}
+
+p{
+    text-align: justify;
+    margin-left: 6px;
+}
+
+table{
+    margin-left: 5px;
+}
+
+table p{
+    text-align: center;
+}
+
+footer{
+    background-color: honeydew;
+}
+
+footer p{
+    text-align: right;
+    margin-right: 50px;
+}
+
+ul{
+    margin-left: -25px;
+}
+
+hr{
+    background-color:rgb(252, 54, 5);
+    height: 5px;
+    width:30px;
+    margin-left: 8px;
+    border-radius: 50px;
+}
+
+.inp{
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+input{
+    margin-top:-20px
+}
+
+.card h5{margin-left: 5px;}

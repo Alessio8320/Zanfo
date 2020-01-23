@@ -1,0 +1,33 @@
+body{font-family: 'Amatic SC', cursive; 
+     font-size: medium;
+     text-align: left;
+     background-image:url(img/bg-green.jpg);
+     background-repeat: repeat;
+     color: #002500;
+     padding-top: 20px;  
+     padding-bottom: 20px;
+     padding-left: 50px;
+     padding-right: 50px;
+     margin: 20px;
+     border: 2px solid color rgb(10, 50, 5)
+    }
+
+h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 28px;
+color:#C0C0C0;
+background-color: rgba(20, 80, 20, 0.45);
+Padding: 5px
+  }
+
+h2{font-size: 75%;
+   padding: 5px;
+   border-bottom: 1px solid black; 
+  }
+
+h3{color:green}
+
+strong {color: #000055}
+
+p {text-align: justify;}
+
+hr {color: #20A050}

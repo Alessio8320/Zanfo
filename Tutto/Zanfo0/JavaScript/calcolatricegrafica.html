@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <style>
+        .green{color: lime;}
+        .red{color: red;}
+        
+        
+        </style>
+
+
+
+
+    </head>
+    <body>
+        <div class="container">
+        
+        <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">numero1</span>
+                </div>
+                <input type="number" id="operando1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+
+        <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">numero2</span>
+                </div>
+                <input type="number" id="operando2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+
+
+
+        <div>
+            <button type="button" class="btn btn-outline-primary" onclick="somma()">+</button>
+            <button type="button" class="btn btn-outline-primary" onclick="sottrazione()">-</button>
+            <button type="button" class="btn btn-outline-primary" onclick="moltiplicazione()">*</button>
+            <button type="button" class="btn btn-outline-primary" onclick="divisione()">/</button>
+        </div>
+
+        <div class="boh">
+            <p id="risultato"></p>
+        </div>
+        
+       <script>
+
+            function somma(){
+                var operando1 = document.getElementById('operando1');//restituisce i riferimenti della variabile con tale id
+                var operando2 = document.getElementById('operando2');
+                var value1=operando1.value; //mi prende il valore(value) contenuto all'interno dell'input
+                value1=parseInt(value1);  //js non riconosce il tipo di dato da html quindi devo specificarglielo
+                var value2=operando2.value;
+                value2=parseInt(value2);
+                var result= value1 + value2;
+                var risultat= document.getElementById('risultato');//così facendo inserisco il risultato all'interno del paragrafo
+                risultat.innerHTML = result;//così facendo invece lo stampo.
+
+                if(result >= 0 ){
+                    risultat.classList.remove('red');
+                    risultat.classList.add('green');
+                }            //così facendo richiamo le classi da css e restituisce il risultato colorato a seconda della condizione  
+                else{          //ma le classi aggiunte restano salvate, e i risultati possono essere incoerenti quindi devo rimuovere la classe appena assegnata
+                    risultat.classList.remove('green');
+                    risultat.classList.add('red');
+                }
+            
+
+            function sottrazione(){
+                var operando1 = document.getElementById('operando1');
+                var operando2 =document.getElementById('operando2');
+                var value1=operando1.value; 
+                value1=parseInt(value1);  
+                var value2=operando2.value;
+                value2=parseInt(value2);
+                var result= value1 - value2;
+                var risultat= document.getElementById('risultato');
+                risultat.innerHTML = result;
+                
+                if(result >= 0 ){
+                    risultat.classList.remove('red');
+                    risultat.classList.add('green');
+                }            //così facendo richiamo le classi da css e restituisce il risultato colorato a seconda della condizione  
+                else{          //ma le classi aggiunte restano salvate, e i risultati possono essere incoerenti quindi devo rimuovere la classe appena assegnata
+                    risultat.classList.remove('green');
+                    risultat.classList.add('red');
+                }
+            }
+
+            function moltiplicazione(){
+                var operando1 = document.getElementById('operando1');
+                var operando2 =document.getElementById('operando2');
+                var value1=operando1.value;
+                value1=parseInt(value1);  
+                var value2=operando2.value;
+                value2=parseInt(value2);
+                var result= value1 * value2;
+                var risultat= document.getElementById('risultato');
+                risultat.innerHTML = result;
+                
+                if(result >= 0 ){
+                    risultat.classList.remove('red');
+                    risultat.classList.add('green');
+                }            //così facendo richiamo le classi da css e restituisce il risultato colorato a seconda della condizione  
+                else{          //ma le classi aggiunte restano salvate, e i risultati possono essere incoerenti quindi devo rimuovere la classe appena assegnata
+                    risultat.classList.remove('green');
+                    risultat.classList.add('red');
+                }
+            }
+
+            function divisione(){
+                var operando1 = document.getElementById('operando1');
+                var operando2 =document.getElementById('operando2');
+                var value1=operando1.value; 
+                value1=parseInt(value1); 
+                var value2=operando2.value;
+                value2=parseInt(value2);
+                var result= value1 / value2;
+                var risultat= document.getElementById('risultato');
+                risultat.innerHTML = result;
+
+                if(value2==0){
+                    alert("non puoi dividere nulla per 0, capra...");
+                }
+                
+                if(result >= 0 ){
+                    risultat.classList.remove('red');
+                    risultat.classList.add('green');
+                }            //così facendo richiamo le classi da css e restituisce il risultato colorato a seconda della condizione  
+                else{          //ma le classi aggiunte restano salvate, e i risultati possono essere incoerenti quindi devo rimuovere la classe appena assegnata
+                    risultat.classList.remove('green');
+                    risultat.classList.add('red');
+                }
+            }
+
+
+        </script>
+        </div>
+         </body>
+</html>

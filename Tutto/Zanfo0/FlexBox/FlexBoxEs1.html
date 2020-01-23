@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+<style>
+
+
+
+.flex{width:1000px;
+    margin: 0px auto;
+    height: 100px;
+    background: blue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 992px)  /* con tal comando vado a variare ciò ho impostato su desktop, per venir visualizzato su altri device, in questo caso tablet*/
+{
+    body{
+        background-color: black;
+    }
+    .flex{background: red;
+        color: grey;
+        width: auto;}
+}
+.container{display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:50px;
+    justify-content: space-between;}
+
+#box1{order:2;
+    background-color: orangered;
+    width: 200px;
+    height: 400px;}
+
+#box2{order:3;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 400px;}
+
+#box3{order:1;
+    background-color: lawngreen;
+    width: 200px;
+    height: 400px;}
+
+</style>
+</head>
+<body>
+
+<div class="cont">
+
+    <div class="flex">
+
+        <h1>The FlexBox</h1>
+
+    </div>
+
+
+    <div class="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+    </div>
+
+
+</div>
+
+</body>
+
+
+</html>

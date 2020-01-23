@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    
+        <meta charset="utf-8">
+        <title>Catalogo Food</title>
+        
+        
+        
+        <style> 
+        body{
+        background-color: whitesmoke;
+        color: black;
+        }
+        li{color: greenyellow;} /*colore del testo delle liste*/
+        h1 {color:sienna;
+            font-size: 36px} /*stili per i titoli h1*/
+        img{width: 70px; height: 50px;}
+          
+        #titolo {color:lightseagreen;
+        background-color: yellow;} /* il titolo definito tramite id in html, può essere colorato tramite questo tag in CSS (<style>*/
+        
+        .testoblu {color: blue;} 
+        .testoverde {color: green;}
+        .testoviola {color: purple;}
+        .testoarancione {color: orange;}
+        .prova{color: orange} /* con .prova imposto i parameteri tuttui uguali per gli elementi della classe prova (es. h3 class="prova" e p class="prova")*/
+         h3.prova {font-size:120px;}
+         p.prova  {font-size: 90px; font-style: italic; font-weight: bold;}
+         #box{color: teal; background: greenyellow;}/* così facendo prendo tutto il box e imposto i parametridesiderati */
+         #box > p{color:red} /*così facendo (> p), prende gli elementi associati al paragrafo (p) degli elementi legati a div con id "box"*/
+         
+         #box2 {background: lightblue;}
+         #box2 p {color:violet}
+         #box3 {background: purple} 
+         #box3 div p{color:pink} /* con il div vado a prendere tutti gli elementi non associati al div di origine */
+        </style>
+ 
+    </head>
+    
+    <body>
+
+    <h1> Catalogo Food </h1>
+        <ul>
+            <li style="color: red">Bucatini 
+                <a href="https://www.buonissimo.it/lericette/5926_Bucatini_alla_napoletana"> <img src ="img/bucatini.jpg"> </a></li>   
+            <li style="color: blue">Tutto Mare
+                <a href="https://www.buonissimo.it/lericette/3880_Spaghetti_ai_frutti_di_mare"> <img src ="img/tuttomare.jpg"></a>  </li>
+            <li style="color: green">Sushi
+                <a href="https://ricette.giallozafferano.it/Sushi.html"> <img src ="img/sushi.jpg" ></a></li>
+            <li style="color: yellow">Sette veli,caffè,amaro
+                <a href="https://blog.giallozafferano.it/dulcisinforno/torta-sette-veli-ricetta/"> <img src =img/7veli.jpg></a> </li>
+        </ul>
+        
+<hr>
+<hr>
+<hr> 
+
+             <h1 id="titolo"> Catalogo </h1> <!-- titolo in css (#titolo) è stato impostato col colore designato -->
+        <ul>
+            <li class="testoblu">Bucatini 
+                <a href=""> <img src ="img/bucatini.jpg"> </a></li>   <!-- la classe testoblu comprende l'elemento <li> che sarà impostato in blue da CSS (<style>) -->
+            <li class="testoverde">Tutto Mare
+                <a href="https://www.buonissimo.it/lericette/3880_Spaghetti_ai_frutti_di_mare"> <img src ="img/tuttomare.jpg"></a>  </li>
+            <li class="testoviola">Sushi
+                <a href="https://ricette.giallozafferano.it/Sushi.html"> <img src ="img/sushi.jpg" ></a></li>
+            <li class="testoarancione">Sette veli,caffè,amaro
+                <a href="https://blog.giallozafferano.it/dulcisinforno/torta-sette-veli-ricetta/"> <img src =img/7veli.jpg></a> </li>
+        </ul>
+
+
+<hr>
+<hr>
+<hr> 
+
+        <h3 class="prova">TEST TITOLO</h3>
+        <P class="prova">testo di prova per l'esecuzione del richiamo della classe "prova" di titolo e paragrafo su CSS</P>
+      </body>
+ 
+        <hr>
+        <hr>
+        <hr>
+
+
+        <div id="box">
+            <p>primo paragrafo</p>
+            <div>
+            <p>secondo paragrafo</p>   
+            </div>    
+            <p>terzo paragrafo</p>
+        </div>
+
+
+        <hr>
+        <hr>
+        <hr>
+
+
+        <div id="box2">
+                <p>primo paragrafo</p>
+            <div>
+                <p>secondo paragrafo</p>
+            </div>    
+                <p>terzo paragrafo</p>
+        </div>
+       
+       
+        <hr>
+        <hr>
+        <hr>            
+
+
+        <div id="box3">
+                <p>primo paragrafo</p>
+            <div>
+                <p>secondo paragrafo</p>
+            </div>    
+                <p>terzo paragrafo</p>
+            <div>
+                <p>quarto paragrafo</p>
+            </div>
+        </div>
+
+</html>
+
